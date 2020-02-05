@@ -11,5 +11,4 @@ venv
 db.sqlite3
 
 # Django
-/static
 .DS_Store
