@@ -30,11 +30,9 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'django_extensions',
     'crispy_forms',
-
 ]
 LOCAL_APPS = [
-    'python_app',
-    'django_app',
+    'blog',
     'users',
 ]
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
