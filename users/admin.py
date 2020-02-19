@@ -67,10 +67,12 @@ class UserAdmin(BaseUserAdmin):
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
-        ('Personal info',
-         {'fields': (
-             'contact_number', 'email', 'country_code',
-             'first_name', 'mid_name', 'last_name', 'is_active', 'is_pending', 'is_blocked', 'lock_counter')}),
+        # ('Personal info',
+        #  {'fields': (
+        #      'contact_number', 'email', 'country_code',
+        #      'first_name', 'mid_name', 'last_name', 'is_active', 'is_blocked',
+        #  )
+        #  }),
         ('Permissions', {'fields': ('is_admin', 'user_permissions', 'groups')}),
         (_('Important dates'), {'fields': ('last_login', 'updated_at',)}),
     )
