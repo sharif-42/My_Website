@@ -29,6 +29,8 @@ DEFAULT_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
     'django_extensions',
+    'crispy_forms',
+
 ]
 LOCAL_APPS = [
     'python_app',
@@ -119,4 +121,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+# For Custom User
 AUTH_USER_MODEL = 'users.User'
+
+# For Crispy Form
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
