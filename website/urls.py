@@ -13,8 +13,9 @@ urlpatterns = [
     # Token Authentication
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-
-    # verify token
     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
+
+    # Contact us
+    path('api/',include('contact_us.urls')),
 
 ]

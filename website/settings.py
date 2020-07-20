@@ -34,6 +34,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'blog',
     'users',
+    'contact_us',
 ]
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
