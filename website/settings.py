@@ -30,6 +30,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'django_extensions',
     'crispy_forms',
+    'drf_yasg',
 ]
 LOCAL_APPS = [
     'blog',
